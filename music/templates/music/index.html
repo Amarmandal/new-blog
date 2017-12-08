@@ -4,7 +4,7 @@
 <p><h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2></p>
 {% if user.is_authenticated %}
     {{ post.pk }}
-    <p>{{ post.title }}</p>
+    <p>{{ post.text }}</p>
 {% else %}
     <ul type="disc">
         <li><p> {{ post.text }} </p></li>
