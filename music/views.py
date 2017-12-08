@@ -8,12 +8,12 @@ from django.utils import timezone
 def index(request):
     post = Post.objects.all()
     number = [n for n in range(len(post))]
-    return render(request, 'music\index.html', {'post': post, 'number': number})
+    return render(request, 'music/index.html', {'post': post, 'number': number})
 
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    return render(request, 'music\post_detail.html', {'post': post})
+    return render(request, 'music/post_detail.html', {'post': post})
 
 
 def post_new(request):
