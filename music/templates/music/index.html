@@ -1,14 +1,14 @@
 {% extends 'music/base.html' %}
 {% block content %}
 {% for post in post %}
-<p><h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2></p>
+    <p><h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2></p>
 {% if user.is_authenticated %}
     {{ post.pk }}
     <p>{{ post.text }}</p>
 {% else %}
-    <ul type="disc">
-        <li><p> {{ post.text }} </p></li>
-    </ul>
+<div class="container">
+    <blockquote class="blockquote"><li><p> <span class="hero">{{ post.text }}</span> </p></li></blockquote>
+</div>
 {% endif %}
 {% endfor %}
 {% endblock %}

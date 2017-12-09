@@ -1,5 +1,24 @@
-
+.page-header {
+        color: green;
+        background-color: orange;
+        padding: 20px 20px 20px 40px;
+        text-align: center;
+        }
 
 .date {
     color:green;
+}
+
+.hero{
+    font-family: 'Khula', sans-serif;
+    line-height: 15px;
+    letter-spacing: -1px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+ color: grey;
 }
