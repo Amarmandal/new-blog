@@ -1,9 +1,13 @@
+body {
+    background-color: #D6F0BB;
+}
+
 .page-header {
-        color: green;
-        background-color: orange;
-        padding: 20px 20px 20px 40px;
-        text-align: center;
-        }
+    color: green;
+    background-color: #E3F4FA;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+}
 
 .date {
     color:green;
@@ -21,4 +25,14 @@ a:link {
 
 a:hover {
  color: grey;
+}
+
+.arpana {
+    background: no-repeat;
+    background-size: cover;
+}
+
+.htext {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
 }

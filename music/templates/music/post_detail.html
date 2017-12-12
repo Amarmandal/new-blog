@@ -1,6 +1,9 @@
 {% extends 'music/base.html' %}
 {% block content %}
 {% if post.published_date %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
 <div class="date">
    Published_date : {{ post.published_date }}
 </div>
@@ -16,4 +19,7 @@
 <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
 {% endif %}
 {% endif %}
+        </div>
+    </div>
+</div>
 {% endblock %}
