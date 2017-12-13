@@ -7,8 +7,7 @@ from django.utils import timezone
 
 def index(request):
     post = Post.objects.all()
-    number = [n for n in range(len(post))]
-    return render(request, 'music/index.html', {'post': post, 'number': number})
+    return render(request, 'music/index.html', {'post': post})
 
 
 def post_detail(request, pk):
