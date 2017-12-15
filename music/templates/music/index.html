@@ -6,7 +6,10 @@
         <p><h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2></p>
     </div>
     <div class="row">
-    <div class="col-sm-8"><blockquote class="blockquote"><li><p> <span class="hero">{{ post.text }}</span> </p></li></blockquote>
+    <div class="col-sm-8"><blockquote class="blockquote"><li><p> <span class="hero">
+    {{ post.text|safe|truncatewords:"30"|linebreaksbr }}
+        <a href="{% url 'post_detail' pk=post.pk %}">Read More</a>
+    </span> </p></li></blockquote>
     </div>
     </div>
 {% endfor %}

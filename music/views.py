@@ -4,7 +4,6 @@ from .forms import PostForm
 from django.utils import timezone
 
 
-
 def index(request):
     post = Post.objects.all()
     return render(request, 'music/index.html', {'post': post})
